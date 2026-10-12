@@ -1,17 +1,29 @@
-# draggable_demo
+# Drag to Cart - Flutter Draggable Demo
 
-A new Flutter project.
+**Draggable** is a Flutter widget that lets the user pick up a widget and drop it onto a `DragTarget`, carrying data with it.
 
-## Getting Started
+## What the app does
 
-This project is a starting point for a Flutter application.
+A small grocery shop. You drag a product (Cookie, Coffee, Cake) into the cart, and the cart shows the item count and total price.
 
-A few resources to get you started if this is your first Flutter project:
+## The three attributes
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### 1. `childWhenDragging`
+- **Default:** `null` (the original card stays fully visible while dragging)
+- **What it changes on screen:** the card left on the shelf fades to 25% opacity during a drag
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 2. `feedback`
+- **Default:** none, it is a required property
+- **What it changes on screen:** the card that follows the finger (amber color, bigger shadow)
+
+### 3. `axis`
+- **Default:** `null` (free movement in any direction)
+- **What it changes on screen:** with `Axis.vertical`, the card only moves up and down
+
+## Sources
+
+- Flutter API docs, Draggable class: https://api.flutter.dev/flutter/widgets/Draggable-class.html
+
+## Presentation date
+
+October 12, 2026
